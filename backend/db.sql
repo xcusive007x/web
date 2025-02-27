@@ -8,4 +8,8 @@ CREATE TABLE user_actions (
     action VARCHAR(50),
     message TEXT,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+<<<<<<< HEAD
 );
+=======
+);
+>>>>>>> 88efb05b2530c4d5a213478bd76a9884f68bb727
