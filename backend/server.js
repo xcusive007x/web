@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 
 // ตั้งค่าการเชื่อมต่อ MySQL
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root', // เปลี่ยนเป็น user ของคุณ
-    password: '', // เปลี่ยนเป็นรหัสผ่านของคุณ
-    database: 'mylove_db'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 db.connect(err => {
